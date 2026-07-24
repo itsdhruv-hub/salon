@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Menu | L'Étoile Maison de Beauté</title>
+  
+  <meta name="description" content="Browse our luxury hair treatments, coloring menu, keratin smoothing, bridal makeup, and gentleman shaves at L'Étoile Maison de Beauté.">
+  <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg">
+  <link rel="apple-touch-icon" href="assets/site-icon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Elements -->
+  <div class="bg-shape bg-shape-1 floating-element"></div>
+  <div class="bg-shape bg-shape-2 floating-element" style="animation-delay: 2s;"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="header-nav" id="headerNav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo light" id="logoLink">
+        L'ÉTOILE
+        <span class="logo-sub">Maison de Beauté</span>
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="packages.html">Packages</a>
+        <a href="stylists.html">Stylists</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-btn">Book Now</a>
+      </nav>
+      
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBPAGE HERO -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-bg">
+      <img src="assets/images/hero_luxury.png" alt="Salon styling tools background">
+    </div>
+    <div class="subpage-hero-content reveal-up">
+      <h1>Our <span>Services</span></h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <a href="services.html">Services Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services section-padding">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="subtitle">Treatments Menu</span>
+        <h2>High-End Hair & Beauty Styling</h2>
+        <p>Explore our premium services executed with precision using organic, luxury brands. Choose a category below.</p>
+      </div>
+      
+      <!-- Tabs Trigger -->
+      <div class="services-tabs-container reveal-up">
+        <button class="tab-btn active" data-target="women-services">Women's Services</button>
+        <button class="tab-btn" data-target="men-services">Men's Services</button>
+      </div>
+      
+      <!-- Services Panes -->
+      
+      <!-- Women's Services -->
+      <div class="services-pane active reveal-up" id="women-services">
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+          <h3>Hair Cut & Styling</h3>
+          <p>Precision cut matching your facial structure, includes professional blow-dry.</p>
+          <span class="service-price">From $75</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-brush"></i>
+          </div>
+          <h3>Hair Coloring</h3>
+          <p>Balayage, highlights, or premium gloss tints using ammonia-free luxury colors.</p>
+          <span class="service-price">From $140</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <h3>Premium Hair Spa</h3>
+          <p>Deep hydration and scalp rejuvenation treatment using Kérastase elixir.</p>
+          <span class="service-price">From $90</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3>Keratin Treatment</h3>
+          <p>Infuses natural keratin to eliminate frizz, adding premium silk-like shine.</p>
+          <span class="service-price">From $200</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-wind"></i>
+          </div>
+          <h3>Smoothening</h3>
+          <p>Advanced permanent straightening treatment for silky, perfectly manageable hair.</p>
+          <span class="service-price">From $180</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-shower"></i>
+          </div>
+          <h3>Hair Wash & Blowout</h3>
+          <p>Revitalizing massage wash followed by signature runway-ready blowout.</p>
+          <span class="service-price">From $50</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <h3>Bridal Styling</h3>
+          <p>Luxurious bridal updos and trials tailored to match your theme and gown.</p>
+          <span class="service-price">From $250</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-face-smile-beam"></i>
+          </div>
+          <h3>Professional Makeup</h3>
+          <p>High-definition and airbrush makeup from certified cosmetic stylists.</p>
+          <span class="service-price">From $120</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+      </div>
+      
+      <!-- Men's Services -->
+      <div class="services-pane reveal-up" id="men-services">
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <h3>Classic Haircut</h3>
+          <p>Precision haircut, warm towel rinse, and premium executive styling.</p>
+          <span class="service-price">From $50</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-razor"></i>
+          </div>
+          <h3>Royal Beard Styling</h3>
+          <p>Beard trim, line up, razor edge, luxury oils, and hot towel pampering.</p>
+          <span class="service-price">From $35</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-spray-can"></i>
+          </div>
+          <h3>Premium Hair Styling</h3>
+          <p>Texturizing, wax finish, or event-specific styling using Oribe styling paste.</p>
+          <span class="service-price">From $30</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-fill-drip"></i>
+          </div>
+          <h3>Beard & Hair Color</h3>
+          <p>Natural gray coverage or premium highlight blends with zero damage.</p>
+          <span class="service-price">From $80</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+          <h3>Gentleman's Facial</h3>
+          <p>Deep skin cleansing, charcoal scrub, exfoliation, and hydration masks.</p>
+          <span class="service-price">From $70</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+          <h3>Executive Head Massage</h3>
+          <p>De-stressing ayurvedic scalp massage using premium essential oils.</p>
+          <span class="service-price">From $45</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+        
+        <div class="service-card glass-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3>Royal Groom Package</h3>
+          <p>Full executive cut, beard treatment, facial, and head massage combo.</p>
+          <span class="service-price">From $150</span>
+          <a href="booking.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.75rem;">Reserve Slot</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="section-padding" style="background-color: var(--color-cream); text-align: center;">
+    <div class="container reveal-up">
+      <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Ready to Book Your Treat?</h2>
+      <p style="max-width: 600px; margin: 0 auto 35px auto;">
+        Secure your private executive styling suite at L'Étoile today. Bookings are open online 24/7.
+      </p>
+      <a href="booking.html" class="btn btn-primary">Book Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col footer-about">
+          <a href="index.html" class="logo">
+            L'ÉTOILE
+            <span class="logo-sub" style="color: var(--color-gold);">Maison de Beauté</span>
+          </a>
+          <p>
+            An elite unisex salon where style meets Parisian luxury. Offering world-class cut, color, spa, and bridal transformations under gold standards.
+          </p>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="gallery.html">Lookbook</a></li>
+            <li><a href="packages.html">Pricing Packages</a></li>
+            <li><a href="contact.html">Visit Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="services.html">Hair Cuts & Styles</a></li>
+            <li><a href="services.html">Haute Colorings</a></li>
+            <li><a href="services.html">Kérastase Spas</a></li>
+            <li><a href="services.html">Executive Shaves</a></li>
+            <li><a href="services.html">Bridal & Makeup</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-newsletter">
+          <h3>Maison Newsletter</h3>
+          <p class="newsletter-desc">Subscribe to receive seasonal trend portfolios, beauty tip guides, and priority booking slots.</p>
+          <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Merci! You have successfully subscribed to our newsletter.'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 L'Étoile Maison de Beauté. All Rights Reserved. Crafted with pure sophistication.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <a href="https://wa.me/13102768800" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

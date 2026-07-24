@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations | L'Étoile Maison de Beauté</title>
+  
+  <meta name="description" content="Book an appointment online at L'Étoile Maison de Beauté. Reserve hair coloring, styling, styling suites, and custom cosmetic sessions.">
+  <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg">
+  <link rel="apple-touch-icon" href="assets/site-icon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Elements -->
+  <div class="bg-shape bg-shape-1 floating-element"></div>
+  <div class="bg-shape bg-shape-2 floating-element" style="animation-delay: 2s;"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="header-nav" id="headerNav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo light" id="logoLink">
+        L'ÉTOILE
+        <span class="logo-sub">Maison de Beauté</span>
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="packages.html">Packages</a>
+        <a href="stylists.html">Stylists</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-btn">Book Now</a>
+      </nav>
+      
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBPAGE HERO -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-bg">
+      <img src="assets/images/hero_luxury.png" alt="Luxury styling chairs banner">
+    </div>
+    <div class="subpage-hero-content reveal-up">
+      <h1>Maison <span>Reservations</span></h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <a href="booking.html">Book Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUXURY BOOKING SECTION -->
+  <section class="booking-section section-padding" id="booking">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="subtitle">Reservations</span>
+        <h2>Secure Your Luxury Suite</h2>
+        <p>Book your preferred stylist and service in advance. Our team will review and confirm your session schedule.</p>
+      </div>
+      
+      <div class="booking-grid">
+        <div class="booking-card glass-card reveal-up">
+          <form class="booking-form" id="bookingForm">
+            
+            <div class="form-group">
+              <label for="bookingName">Full Name</label>
+              <input type="text" id="bookingName" class="form-input" placeholder="e.g. Jean-Luc Godard" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="bookingPhone">Phone Number</label>
+              <input type="tel" id="bookingPhone" class="form-input" placeholder="e.g. +1 (555) 019-2834" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="bookingEmail">Email Address</label>
+              <input type="email" id="bookingEmail" class="form-input" placeholder="e.g. jean@etoilesalon.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="bookingService">Select Service</label>
+              <select id="bookingService" class="form-input" required>
+                <option value="" disabled selected>Select service category</option>
+                <optgroup label="Women's Services">
+                  <option value="women-cut">Hair Cut & Styling ($75+)</option>
+                  <option value="women-color">Hair Coloring ($140+)</option>
+                  <option value="women-spa">Premium Hair Spa ($90+)</option>
+                  <option value="women-keratin">Keratin Treatment ($200+)</option>
+                  <option value="women-straight">Smoothening ($180+)</option>
+                  <option value="women-bridal">Bridal Styling ($250+)</option>
+                </optgroup>
+                <optgroup label="Men's Services">
+                  <option value="men-cut">Classic Haircut ($50+)</option>
+                  <option value="men-beard">Royal Beard Styling ($35+)</option>
+                  <option value="men-facial">Gentleman's Facial ($70+)</option>
+                  <option value="men-groom">Royal Groom Package ($150+)</option>
+                </optgroup>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="bookingDate">Preferred Date</label>
+              <input type="date" id="bookingDate" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="bookingTime">Preferred Time</label>
+              <input type="time" id="bookingTime" class="form-input" required>
+            </div>
+            
+            <div class="form-group form-group-full">
+              <label for="bookingMessage">Special Requests & Stylist preference</label>
+              <textarea id="bookingMessage" class="form-input" placeholder="Let us know if you have scalp allergies or prefer a specific master stylist..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit Reservation Request</button>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- success notification modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="success-modal">
+      <div class="modal-icon">
+        <i class="fa-solid fa-calendar-check"></i>
+      </div>
+      <h3>Reservation Requested!</h3>
+      <p>Thank you for choosing L'Étoile. Our booking concierge will contact you within 2 hours to confirm your luxury appointment slot.</p>
+      <button class="btn btn-primary" id="modalCloseBtn">Perfect, Thank You</button>
+    </div>
+  </div>
+
+  <!-- GUIDELINES SECTION -->
+  <section class="section-padding" style="background-color: var(--color-cream);">
+    <div class="container reveal-up">
+      <div class="section-header" style="margin-bottom: 40px;">
+        <span class="subtitle">Guidelines</span>
+        <h2>Reservation Policies</h2>
+      </div>
+      <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="why-card">
+          <div class="why-card-icon"><i class="fa-solid fa-bell"></i></div>
+          <div class="why-card-content">
+            <h3>Arrival Times</h3>
+            <p>Please arrive 10 minutes prior to your booking. This allows us to serve your welcome drinks and complete your scalp condition chart.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-card-icon"><i class="fa-solid fa-calendar-minus"></i></div>
+          <div class="why-card-content">
+            <h3>Cancellation Terms</h3>
+            <p>We request at least 24 hours notice for any rescheduling or cancellations. Late cancellations may incur a fee matching 50% of the service price.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col footer-about">
+          <a href="index.html" class="logo">
+            L'ÉTOILE
+            <span class="logo-sub" style="color: var(--color-gold);">Maison de Beauté</span>
+          </a>
+          <p>
+            An elite unisex salon where style meets Parisian luxury. Offering world-class cut, color, spa, and bridal transformations under gold standards.
+          </p>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="gallery.html">Lookbook</a></li>
+            <li><a href="packages.html">Pricing Packages</a></li>
+            <li><a href="contact.html">Visit Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="services.html">Hair Cuts & Styles</a></li>
+            <li><a href="services.html">Haute Colorings</a></li>
+            <li><a href="services.html">Kérastase Spas</a></li>
+            <li><a href="services.html">Executive Shaves</a></li>
+            <li><a href="services.html">Bridal & Makeup</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-newsletter">
+          <h3>Maison Newsletter</h3>
+          <p class="newsletter-desc">Subscribe to receive seasonal trend portfolios, beauty tip guides, and priority booking slots.</p>
+          <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Merci! You have successfully subscribed to our newsletter.'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 L'Étoile Maison de Beauté. All Rights Reserved. Crafted with pure sophistication.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <a href="https://wa.me/13102768800" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

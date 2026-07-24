@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | L'Étoile Maison de Beauté</title>
+  
+  <meta name="description" content="Get in touch with L'Étoile Maison de Beauté. Contact numbers, business hours, addresses, and maps for our Paris and Beverly Hills salons.">
+  <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg">
+  <link rel="apple-touch-icon" href="assets/site-icon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Elements -->
+  <div class="bg-shape bg-shape-1 floating-element"></div>
+  <div class="bg-shape bg-shape-2 floating-element" style="animation-delay: 2s;"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="header-nav" id="headerNav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo light" id="logoLink">
+        L'ÉTOILE
+        <span class="logo-sub">Maison de Beauté</span>
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="packages.html">Packages</a>
+        <a href="stylists.html">Stylists</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="booking.html" class="nav-btn">Book Now</a>
+      </nav>
+      
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBPAGE HERO -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-bg">
+      <img src="assets/images/about_premium.png" alt="Clean elegant salon desk background">
+    </div>
+    <div class="subpage-hero-content reveal-up">
+      <h1>Contact <span>Us</span></h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <a href="contact.html">Visit Salons</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="contact-section section-padding" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="subtitle">Visit Us</span>
+        <h2>Maison Salons & Hours</h2>
+        <p>Come feel the luxury experience. We are conveniently situated in premium luxury avenues.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info-list reveal-up">
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div class="contact-info-text">
+              <h3>Maison Address</h3>
+              <p>42 Avenue Montaigne, 75008 Paris, France
+              9440 Wilshire Blvd, Beverly Hills, CA 90212, USA</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contact-info-text">
+              <h3>Reservations Line</h3>
+              <p>Paris: +33 (1) 42 68 53 00
+              Beverly Hills: +1 (310) 276-8800</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <div class="contact-info-text">
+              <h3>Concierge Email</h3>
+              <p>concierge@etoilemaison.com
+              careers@etoilemaison.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="contact-info-text">
+              <h3>Salons Business Hours</h3>
+              <p>Monday – Saturday: 09:00 AM – 08:00 PM
+              Sunday: 10:00 AM – 06:00 PM</p>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Interactive Google Map Placeholder -->
+        <div class="map-container reveal-zoom">
+          <div class="map-placeholder-content">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>L'Étoile Beverly Hills</h3>
+            <p>9440 Wilshire Boulevard, Golden Triangle, Beverly Hills, CA 90212</p>
+            <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK MESSAGE FORM -->
+  <section class="booking-section section-padding" style="background-color: var(--color-cream);">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="subtitle">Get In Touch</span>
+        <h2>Send Us a Message</h2>
+        <p>Do you have custom styling requests or corporate reservation queries? Drop us a line below.</p>
+      </div>
+      
+      <div class="booking-grid">
+        <div class="booking-card glass-card reveal-up">
+          <form class="booking-form" id="contactInquiryForm" onsubmit="event.preventDefault(); alert('Merci! Your message has been sent successfully. We will get back to you shortly.'); this.reset();">
+            
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. Jean-Luc Godard" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="e.g. jean@etoilesalon.com" required>
+            </div>
+            
+            <div class="form-group form-group-full">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" class="form-input" placeholder="e.g. Corporate Event Styling" required>
+            </div>
+            
+            <div class="form-group form-group-full">
+              <label for="contactMessage">Your Message</label>
+              <textarea id="contactMessage" class="form-input" placeholder="How can L'Étoile help you today..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col footer-about">
+          <a href="index.html" class="logo">
+            L'ÉTOILE
+            <span class="logo-sub" style="color: var(--color-gold);">Maison de Beauté</span>
+          </a>
+          <p>
+            An elite unisex salon where style meets Parisian luxury. Offering world-class cut, color, spa, and bridal transformations under gold standards.
+          </p>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="gallery.html">Lookbook</a></li>
+            <li><a href="packages.html">Pricing Packages</a></li>
+            <li><a href="contact.html">Visit Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="services.html">Hair Cuts & Styles</a></li>
+            <li><a href="services.html">Haute Colorings</a></li>
+            <li><a href="services.html">Kérastase Spas</a></li>
+            <li><a href="services.html">Executive Shaves</a></li>
+            <li><a href="services.html">Bridal & Makeup</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-newsletter">
+          <h3>Maison Newsletter</h3>
+          <p class="newsletter-desc">Subscribe to receive seasonal trend portfolios, beauty tip guides, and priority booking slots.</p>
+          <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Merci! You have successfully subscribed to our newsletter.'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 L'Étoile Maison de Beauté. All Rights Reserved. Crafted with pure sophistication.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <a href="https://wa.me/13102768800" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

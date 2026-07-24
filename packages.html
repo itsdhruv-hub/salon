@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Packages | L'Étoile Maison de Beauté</title>
+  
+  <meta name="description" content="View our curated hair and grooming plans, Silver, Gold and Platinum pricing packages at L'Étoile Maison de Beauté.">
+  <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg">
+  <link rel="apple-touch-icon" href="assets/site-icon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Elements -->
+  <div class="bg-shape bg-shape-1 floating-element"></div>
+  <div class="bg-shape bg-shape-2 floating-element" style="animation-delay: 2s;"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="header-nav" id="headerNav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo light" id="logoLink">
+        L'ÉTOILE
+        <span class="logo-sub">Maison de Beauté</span>
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="packages.html" class="active">Packages</a>
+        <a href="stylists.html">Stylists</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-btn">Book Now</a>
+      </nav>
+      
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBPAGE HERO -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-bg">
+      <img src="assets/images/about_premium.png" alt="Spa oils styling tools">
+    </div>
+    <div class="subpage-hero-content reveal-up">
+      <h1>Luxury <span>Packages</span></h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <a href="packages.html">Pricing Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES SECTION -->
+  <section class="packages section-padding" id="packages">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="subtitle">Pricing Plans</span>
+        <h2>Curated Indulgence Plans</h2>
+        <p>Choose an all-inclusive beauty plan designed to cover your routine hair, scalp, and beauty needs at premium savings.</p>
+      </div>
+      
+      <div class="packages-grid">
+        <!-- Basic Plan -->
+        <div class="pkg-card glass-card reveal-up">
+          <span class="pkg-name">Basic Care</span>
+          <div class="pkg-price-box">
+            <span class="pkg-currency">$</span>
+            <span class="pkg-price">45</span>
+            <p>/ session</p>
+          </div>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-circle-check"></i> Precision Haircut</li>
+            <li><i class="fa-solid fa-circle-check"></i> Revitalizing Hair Wash</li>
+            <li><i class="fa-solid fa-circle-check"></i> Basic Blow-dry styling</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Premium Kérastase Spa</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Face & Beard Sculpting</li>
+          </ul>
+          <a href="booking.html" class="btn btn-secondary">Book Now</a>
+        </div>
+        
+        <!-- Silver Plan -->
+        <div class="pkg-card glass-card reveal-up" style="transition-delay: 0.1s;">
+          <span class="pkg-name">Silver Elixir</span>
+          <div class="pkg-price-box">
+            <span class="pkg-currency">$</span>
+            <span class="pkg-price">95</span>
+            <p>/ session</p>
+          </div>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-circle-check"></i> Precision Haircut</li>
+            <li><i class="fa-solid fa-circle-check"></i> Deep Hair Spa & Wash</li>
+            <li><i class="fa-solid fa-circle-check"></i> Signature Blowout</li>
+            <li><i class="fa-solid fa-circle-check"></i> Express Beard/Face Trim</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Premium Skin Facial</li>
+          </ul>
+          <a href="booking.html" class="btn btn-secondary">Book Now</a>
+        </div>
+        
+        <!-- Gold Plan (Popular) -->
+        <div class="pkg-card glass-card pkg-popular reveal-up" style="transition-delay: 0.2s;">
+          <div class="pkg-ribbon">Most Popular</div>
+          <span class="pkg-name" style="color: var(--color-gold);">Gold Opulence</span>
+          <div class="pkg-price-box">
+            <span class="pkg-currency">$</span>
+            <span class="pkg-price">165</span>
+            <p>/ session</p>
+          </div>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-circle-check"></i> Master Stylist Haircut</li>
+            <li><i class="fa-solid fa-circle-check"></i> Kérastase Spa & Coloring</li>
+            <li><i class="fa-solid fa-circle-check"></i> Signature Blowout / Wave</li>
+            <li><i class="fa-solid fa-circle-check"></i> Royal Beard / Face Sculpting</li>
+            <li><i class="fa-solid fa-circle-check"></i> Charcoal Skin Facial Mask</li>
+          </ul>
+          <a href="booking.html" class="btn btn-primary">Book Now</a>
+        </div>
+        
+        <!-- Platinum Plan -->
+        <div class="pkg-card glass-card reveal-up" style="transition-delay: 0.3s;">
+          <span class="pkg-name">Maison Platinum</span>
+          <div class="pkg-price-box">
+            <span class="pkg-currency">$</span>
+            <span class="pkg-price">280</span>
+            <p>/ session</p>
+          </div>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-circle-check"></i> Executive Director Styling</li>
+            <li><i class="fa-solid fa-circle-check"></i> Keratin Elixir & Spa Treatment</li>
+            <li><i class="fa-solid fa-circle-check"></i> Signature Bridal / Groom Prep</li>
+            <li><i class="fa-solid fa-circle-check"></i> Golden Glowing Skin Facial</li>
+            <li><i class="fa-solid fa-circle-check"></i> Premium Manicure & Makeup</li>
+          </ul>
+          <a href="booking.html" class="btn btn-secondary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section section-padding">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="subtitle">Common Questions</span>
+        <h2>Package Guidelines</h2>
+        <p>Find quick answers regarding our luxury pricing packages, consultations, and payment guidelines.</p>
+      </div>
+      
+      <div class="faq-container reveal-up">
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>Are the packages customizable?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-content">
+            <p>Yes, absolutely. If you wish to swap a treatment in a package (e.g. swap a Gentlemen's Facial for a Head Massage), simply mention it to your concierge at check-in or state it in your reservation message.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>Which payment modes do you accept?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-content">
+            <p>We accept all major credit cards (Visa, MasterCard, American Express), Apple Pay, and secure bank transfers for bridal events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col footer-about">
+          <a href="index.html" class="logo">
+            L'ÉTOILE
+            <span class="logo-sub" style="color: var(--color-gold);">Maison de Beauté</span>
+          </a>
+          <p>
+            An elite unisex salon where style meets Parisian luxury. Offering world-class cut, color, spa, and bridal transformations under gold standards.
+          </p>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="gallery.html">Lookbook</a></li>
+            <li><a href="packages.html">Pricing Packages</a></li>
+            <li><a href="contact.html">Visit Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="services.html">Hair Cuts & Styles</a></li>
+            <li><a href="services.html">Haute Colorings</a></li>
+            <li><a href="services.html">Kérastase Spas</a></li>
+            <li><a href="services.html">Executive Shaves</a></li>
+            <li><a href="services.html">Bridal & Makeup</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-newsletter">
+          <h3>Maison Newsletter</h3>
+          <p class="newsletter-desc">Subscribe to receive seasonal trend portfolios, beauty tip guides, and priority booking slots.</p>
+          <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Merci! You have successfully subscribed to our newsletter.'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 L'Étoile Maison de Beauté. All Rights Reserved. Crafted with pure sophistication.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <a href="https://wa.me/13102768800" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

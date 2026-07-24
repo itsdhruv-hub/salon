@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lookbook Gallery | L'Étoile Maison de Beauté</title>
+  
+  <meta name="description" content="View modern hairstyles, hair colors, beard shapes, and beauty styling designs in L'Étoile Maison de Beauté Lookbook.">
+  <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg">
+  <link rel="apple-touch-icon" href="assets/site-icon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Elements -->
+  <div class="bg-shape bg-shape-1 floating-element"></div>
+  <div class="bg-shape bg-shape-2 floating-element" style="animation-delay: 2s;"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="header-nav" id="headerNav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo light" id="logoLink">
+        L'ÉTOILE
+        <span class="logo-sub">Maison de Beauté</span>
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="packages.html">Packages</a>
+        <a href="stylists.html">Stylists</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-btn">Book Now</a>
+      </nav>
+      
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBPAGE HERO -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-bg">
+      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop" alt="Salon interior lookbook">
+    </div>
+    <div class="subpage-hero-content reveal-up">
+      <h1>Artistry <span>Gallery</span></h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <a href="gallery.html">Lookbook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery-section section-padding">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="subtitle">Artistic Portfolio</span>
+        <h2>Signature Transformations</h2>
+        <p>Take a look at the actual hairstyles, cuts, shaves, and makeups designed inside L'Étoile suites. Click to enlarge.</p>
+      </div>
+      
+      <div class="gallery-grid reveal-zoom">
+        <!-- Item 1: Haircut (Tall) -->
+        <div class="gallery-item tall" data-src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop" alt="Precision Haircut Styling">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>Precision Haircut</h4>
+            <p>Styling & Blowout</p>
+          </div>
+        </div>
+        
+        <!-- Item 2: Hair Coloring -->
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop" alt="Premium Hair Coloring Highlights">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>Champagne Highlights</h4>
+            <p>Color Transformation</p>
+          </div>
+        </div>
+        
+        <!-- Item 3: Bridal Look (Tall) -->
+        <div class="gallery-item tall" data-src="https://images.unsplash.com/photo-1484862149534-1127a3c3e218?q=80&w=800&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1484862149534-1127a3c3e218?q=80&w=800&auto=format&fit=crop" alt="Elegance Bridal Hair styling">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>Bridal Styling</h4>
+            <p>Haute Updo & Trial</p>
+          </div>
+        </div>
+        
+        <!-- Item 4: Beard Styling -->
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=800&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=800&auto=format&fit=crop" alt="Men Beard Sculpting Grooming">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>Royal Beard Trimming</h4>
+            <p>Line-up & Hot Towel</p>
+          </div>
+        </div>
+        
+        <!-- Item 5: Salon Interior -->
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop" alt="L'Étoile Salon Interior Beverly Hills">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>L'Étoile Interior</h4>
+            <p>Chic Aesthetic Stations</p>
+          </div>
+        </div>
+        
+        <!-- Item 6: Happy Customer -->
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1527799822367-a2505d9c2736?q=80&w=800&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1527799822367-a2505d9c2736?q=80&w=800&auto=format&fit=crop" alt="Client with Premium Hair Spa Finish">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>Vibrant Silk Spa</h4>
+            <p>Happy Customer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Gallery Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></span>
+      <img src="" id="lightboxImg" alt="Enlarged gallery item">
+    </div>
+  </div>
+
+  <!-- CALL TO ACTION -->
+  <section class="section-padding" style="background-color: var(--color-cream); text-align: center;">
+    <div class="container reveal-up">
+      <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Would You Like a Similar Look?</h2>
+      <p style="max-width: 600px; margin: 0 auto 35px auto;">
+        Our team can recreate any contemporary or classic style. Book a styling session with your favorite artist.
+      </p>
+      <a href="booking.html" class="btn btn-primary">Book Styling Session</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col footer-about">
+          <a href="index.html" class="logo">
+            L'ÉTOILE
+            <span class="logo-sub" style="color: var(--color-gold);">Maison de Beauté</span>
+          </a>
+          <p>
+            An elite unisex salon where style meets Parisian luxury. Offering world-class cut, color, spa, and bridal transformations under gold standards.
+          </p>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="gallery.html">Lookbook</a></li>
+            <li><a href="packages.html">Pricing Packages</a></li>
+            <li><a href="contact.html">Visit Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="services.html">Hair Cuts & Styles</a></li>
+            <li><a href="services.html">Haute Colorings</a></li>
+            <li><a href="services.html">Kérastase Spas</a></li>
+            <li><a href="services.html">Executive Shaves</a></li>
+            <li><a href="services.html">Bridal & Makeup</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-newsletter">
+          <h3>Maison Newsletter</h3>
+          <p class="newsletter-desc">Subscribe to receive seasonal trend portfolios, beauty tip guides, and priority booking slots.</p>
+          <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Merci! You have successfully subscribed to our newsletter.'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 L'Étoile Maison de Beauté. All Rights Reserved. Crafted with pure sophistication.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <a href="https://wa.me/13102768800" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
